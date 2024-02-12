@@ -2,7 +2,8 @@ html,
 body {
     height: 100%;
     margin: 0px;
-    /* color: azure; */
+    /* background-color: rgb(0, 0, 0);
+    color: #fff; */
 }
 
 li {
@@ -19,18 +20,36 @@ h4 {
     margin: 0;
 }
 
+h5 {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
 p {
     font-size: 22px;
     font-weight: 200;
 }
-header {
-    background-color: rgb(8, 13, 64);
-    overflow-y: auto;
-    overflow-x: hidden;
+.top {
+    background-color: rgb(20, 13, 80)
+}
+
+.greeting {
+    height: 80vh;
+    width: 200vb;
+    background: no-repeat center/80% url("img/Europa-header.jpg");
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 50px ;
+
 }
 
 main {
-    padding: 0 80px;
+    padding: 0 150px;
 }
 
 .title {
@@ -40,14 +59,6 @@ main {
     padding: 20px;
     margin: 0;
 
-}
-
-.main-page {
-    height: 100%;
-    width: 100%;
-    background-image: url(img/Europa-bg.jpg);
-    display: flex;
-    justify-content: center;
 }
 
 .main-title {
@@ -61,9 +72,66 @@ main {
     margin-right: 30px;
 }
 
+/* Card */
+
+.card {
+    width: 500px;
+    height: 650px;
+    display: flex;
+    overflow: hidden;
+    transition: all .5s ease;
+    border-radius: 60px;
+
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(.9);
+}
+
+.card img {
+    transition: all .5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.15);
+}
+
+.card:hover .card-content {
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+}
+
+.card-content {
+    opacity: 0;
+    transition: all .5s ease;
+    color: #fff;
+    font: 600 1.5rem Tahoma;
+    padding: 1.25rem;
+    z-index: 30;
+}
+
+.card:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    z-index: 20;
+    display: none;
+}
+
+.card:hover:after {
+    display: block;
+}
+
+
 .Europa {
-    height: 70vh;
-    width: 70vb;
+    height: 50vh;
+    /* width: 70vb; */
 }
 
 .intro {
@@ -76,37 +144,65 @@ main {
     /* padding: 100px 50px; */
 }
 
+.intro-text {
+    width: 60%;
+}
+
 .descr {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px;
 }
 
 .criterions {
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: center;
-    flex-direction: column;
-    width: 700px;
-    text-align: center;
+    gap: 100px;
+}
+
+.crit-title {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.crit-descr {
+    width: 500px;
+}
+
+.chemistry {
+    margin: 0 70px ;
+}
+
+.io-moon {
+    height: 25vh;
+    float: right;
+}
+
+.main-inf-title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    font-size: 58;
 }
 
 .water {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 70px;
-}
-
-.water-title {
-    display: flex;
-    justify-content: center;
+    gap: 100px;
 }
 
 .obj {
     width: 30% ;
+    color: #fff;
+    background-color: rgba(0, 0, 82, 0.671);
+    border-radius: 60px;
+    padding: 35px;
 }
 
 .descr-img,
@@ -114,3 +210,26 @@ main {
     height: 50vh;
 }
 
+.descr-img {
+    border-radius: 100px;
+}
+
+.img-energy {
+    height: 10vh;
+}
+
+.energy {
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.energy-europa {
+    flex-direction: row-reverse;
+    justify-content: right;
+}
+
+.energy-europa-descr {
+    
+}
