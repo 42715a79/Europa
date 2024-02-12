@@ -1,0 +1,116 @@
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    /* color: azure; */
+}
+
+li {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 38px;
+    margin: 0;
+}
+
+p {
+    font-size: 22px;
+    font-weight: 200;
+}
+header {
+    background-color: rgb(8, 13, 64);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+main {
+    padding: 0 80px;
+}
+
+.title {
+    color: azure;
+    font-size: 32px;
+    text-align: right;
+    padding: 20px;
+    margin: 0;
+
+}
+
+.main-page {
+    height: 100%;
+    width: 100%;
+    background-image: url(img/Europa-bg.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+.main-title {
+    color: aliceblue;
+    text-align: center;
+    font-size: 54px;
+}
+
+.main-information {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.Europa {
+    height: 70vh;
+    width: 70vb;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* padding: 100px 50px; */
+}
+
+.descr {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.criterions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 700px;
+    text-align: center;
+}
+
+.water {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.water-title {
+    display: flex;
+    justify-content: center;
+}
+
+.obj {
+    width: 30% ;
+}
+
+.descr-img,
+.img-comparison {
+    height: 50vh;
+}
+
