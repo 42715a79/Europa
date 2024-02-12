@@ -49,7 +49,7 @@ section {
 }
 
 main {
-    padding: 0 150px;
+    padding: 0 140px;
 }
 
 .title {
@@ -141,6 +141,9 @@ main {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    background-color: blueviolet;
+    padding: 50px;
+    border-radius: 60px;
     /* padding: 100px 50px; */
 }
 
@@ -179,8 +182,17 @@ main {
 }
 
 .io-moon {
-    height: 25vh;
+    height: 35vh;
     float: right;
+    border-radius: 0 60px;
+    margin-right: 20px;
+}
+
+.europa-clipper {
+    height: 35vh;
+    float: left;
+    border-radius: 60px 0;
+    margin-right: 20px;
 }
 
 .main-inf-title {
@@ -194,11 +206,11 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 100px;
+    gap: 90px;
 }
 
 .obj {
-    width: 30% ;
+    width: 35% ;
     color: #fff;
     background-color: rgba(0, 0, 82, 0.671);
     border-radius: 60px;
@@ -212,6 +224,11 @@ main {
 
 .descr-img {
     border-radius: 100px;
+}
+
+.energy-section {
+    justify-content: center;
+    width: 800px;
 }
 
 .img-energy {
@@ -228,8 +245,4 @@ main {
 .energy-europa {
     flex-direction: row-reverse;
     justify-content: right;
-}
-
-.energy-europa-descr {
-    
 }
