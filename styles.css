@@ -1,6 +1,5 @@
 html,
 body {
-    height: 100%;
     margin: 0px;
 }
 
@@ -141,6 +140,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    padding-top: 100px;
 }
 
 .intro-text {
@@ -154,7 +154,6 @@ section {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    /* padding: 50px; */
 }
 
 .descr-list {
@@ -189,6 +188,7 @@ section {
 
 .chemistry {
     margin: 0 70px ;
+    gap: 20px;
 }
 
 .io-moon {
@@ -199,7 +199,7 @@ section {
 }
 
 .europa-clipper {
-    height: 35vh;
+    height: 30vh;
     float: left;
     border-radius: 60px 0;
     margin-right: 20px;
@@ -218,8 +218,20 @@ section {
     gap: 90px;
 }
 
+.chemistry-descr {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.chemistry-text {
+    margin-left: 50px;
+    width: 90%;
+}
+
 .obj {
-    width: 35% ;
+    width: 30% ;
     color: #fff;
     background-color: rgba(0, 0, 82, 0.671);
     border-radius: 60px;
@@ -239,7 +251,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 140px;
 }
 
 .img-energy {
@@ -255,5 +267,5 @@ section {
     align-items: center;
     padding: 30px;
     border-radius: 60px;
-    margin: 15px 50px;
+    margin: 15px 150px;
 }
