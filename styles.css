@@ -269,3 +269,63 @@ section {
     border-radius: 60px;
     margin: 15px 150px;
 }
+
+@media screen and (max-width: 600px)
+{
+    h3{
+        font-size: 44px;
+    }
+    .intro {
+        justify-items: center;
+        flex-direction: column-reverse;
+    }
+    .card {
+        margin: 20px;
+        width: 80%;
+    }
+    
+    .intro-text {
+        font-size: 24px;
+        width: 80%;
+    }
+
+    .water,
+    .criterions {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .crit-descr {
+            width: 90%;
+    }
+
+    .obj {
+        width: 80%;
+    }
+
+    .img-comparison {
+        height: 300px;
+    }
+
+    .main-inf-title {
+        font-size: 44px;
+    }
+
+    .chemistry-text {
+        font-size: 20px;
+        margin: 0;
+        text-align: justify;
+        
+    }
+
+    p{
+        width: 90%;
+    }
+
+    .io-moon,
+    .europa-clipper {
+        height: 30vh;
+
+    }
+
+}
