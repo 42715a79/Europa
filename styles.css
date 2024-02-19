@@ -153,11 +153,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .descr-list {
-    width: 600px;
+    width: 70%;
 }
 
 .criterions {
@@ -273,7 +273,11 @@ section {
 @media screen and (max-width: 600px)
 {
     h3{
-        font-size: 44px;
+        font-size: 36px;
+    }
+    
+    .main-title {
+        font-size: 42px;
     }
     .intro {
         justify-items: center;
@@ -283,10 +287,31 @@ section {
         margin: 20px;
         width: 80%;
     }
+
+    .Galileo-text{
+        font-size: 18px;
+    }
     
     .intro-text {
         font-size: 24px;
         width: 80%;
+    }
+
+    .descr {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    li {
+        font-size: 24px;
+    }
+    .descr-img {
+        width: 90%;
+        height: 90%;
     }
 
     .water,
@@ -310,12 +335,20 @@ section {
     .main-inf-title {
         font-size: 44px;
     }
+    .chemistry-descr {
+        padding-left: 10px;
+        align-items: center
+    }
+    
+
+    .chemistry {
+        margin: 10px;
+    }
 
     .chemistry-text {
         font-size: 20px;
         margin: 0;
-        text-align: justify;
-        
+        text-align: justify;       
     }
 
     p{
@@ -324,8 +357,20 @@ section {
 
     .io-moon,
     .europa-clipper {
-        height: 30vh;
+       height: 100%;
+       width: 100%;
+       margin-bottom: 10px;
+    }
 
+    .energy {
+        display: block;
+        gap: 0;
+        margin: 10px;
+    }
+
+    .img-energy {
+        float: left;
+        margin-right: 10px;
     }
 
 }
